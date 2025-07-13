@@ -1,1 +1,10 @@
-/bin/
+# Python
+__pycache__/
+*.pyc
+
+# Virtualenv
+.venv/
+venv/
+
+# Pulumi state
+Pulumi.dev.yaml
