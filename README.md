@@ -77,7 +77,7 @@ gcloud auth application-default login
     Once the deployment is complete, Pulumi will output the public IP address of the Ingress.
     ```
     Outputs:
-        ingress_ip: "34.149.168.17"
+        ingress_ip: "<YOUR_INGRESS_IP>"
     ```
     You can access your application by navigating to this IP address in your browser or by using `curl`:
     ```bash
