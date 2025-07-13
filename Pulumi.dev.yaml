@@ -1,0 +1,8 @@
+config:
+  gcp-py-gke:node_count: "2"
+  gcp-py-gke:node_machine_type: e2-micro
+  gcp:project: pulumi-464709
+  gcp:zone: us-west1-a
+  gcp-py-gke:username: vlado
+  gcp-py-gke:message: HelloWorld
+  gcp-py-gke:app_message: Bok Vlado!

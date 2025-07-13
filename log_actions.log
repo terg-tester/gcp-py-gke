@@ -1,0 +1,18 @@
+Detaljan log akcija - Refaktoriranje Ingressa - 09.07.2025
+
+--- 1. Izmjena koda ---
+Datoteka `__main__.py` je izmijenjena kako bi koristila `Ingress` umjesto `Service` tipa `LoadBalancer`.
+
+--- 2. Prvi pokušaj deploymenta (`pulumi up`) ---
+Neuspjeh zbog `TypeError` u definiciji `labels`.
+
+--- 3. Drugi pokušaj deploymenta (`pulumi up`) ---
+Neuspjeh zbog `TypeError` u definiciji `annotations`.
+
+--- 4. Treći pokušaj deploymenta (`pulumi up`) ---
+Uspješno. Stvoren `Ingress` i `Service`, obrisan stari `Service`.
+Nova IP adresa: 34.54.91.31
+
+--- 5. Verifikacija (`curl`) ---
+Prvi pokušaj na novu IP adresu vratio je grešku 'Empty reply from server'.
+Nakon 60 sekundi čekanja, drugi pokušaj je bio uspješan i vratio je HTML stranicu.
